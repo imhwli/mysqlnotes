@@ -1,5 +1,5 @@
-#MySQL Notes
-
+MySQL Notes
+===========
 
 ####SQL's purpose 
 1.Organize data
