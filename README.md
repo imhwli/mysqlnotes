@@ -2,7 +2,7 @@
 # MySQL Notes
 
 
-SQL is a eclarative langauage 
+SQL is a declarative langauage 
 MySQL is relational database that describe data and the relationship between data entities
 
 
@@ -205,6 +205,8 @@ Use *mysql* command to restore database.
 
 MySQL workbench or myphpadmin: GUI tool for manage and monitor MySQL database. It also allow you to import and export database
 
+
+### Miscellaneous 
 
 ##### Indexing
 
