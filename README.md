@@ -2,13 +2,10 @@
 # MySQL Notes
 
 
-SQL 
-1. Declarative langauage 
-2. Organize/Manipulate data
-3. Persistent data
+SQL is a eclarative langauage 
+MySQL is relational database that describe data and the relationship between data entities
 
-
-> Relational Database describe data and the relationship between data entities
+A database is used for organize/manipulate data and for persistent data
 
 
 #### Normalization
@@ -32,6 +29,11 @@ Will return a two columns
 ~~~~
 SELECT 'hello', 'github'
 ~~~~
+
+
+> SELECT * FROM <table_name>
+> Bad query because selecting everything from the table and increase disk I/O
+> Best practices is to be specific and define in the query. 
 
 ##### FROM Clause
 
@@ -65,9 +67,6 @@ Remove row/s from table
 ~~~~
 DELETE FROM cars contacts where id = 2;
 ~~~~
-
-
-
 
 > Using alias to distinguish column and their association with table. Important when using join query
 > ~~~~ 
@@ -152,4 +151,42 @@ FROM car c
 HAVING SUM(c.milage) < 5000;
 ~~~~
 
+
+
+
+### Joining Tables
+
+> The JOIN clause allow merges multiple tables into one result set
+
+
+<p align="center">
+  <img src="https://i.stack.imgur.com/UI25E.jpg">
+  <br/>
+</p>
+
+##### CROSS JOIN clause
+
+> Simplest JOIN, least useful 
+> All rows from both tables 
+
+~~~~
+SELECT c.maker, o.owner
+FROM cars c, owner o;
+
+
+~~~~
+
+
+##### INNER JOIN 
+
+
+##### OUTER JOIN 
+
+##### LEFT OUTER JOIN 
+
+
+##### RIGHT OUTER JOIN 
+
+
+##### SELF JOIN 
 
