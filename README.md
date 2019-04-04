@@ -227,8 +227,8 @@ FROM cars c, owner o;
 MySQL provides utilities, such as mysqldump, for database backup. They are good for small database backup. For medium to large databse, it is recommended to have physical backup. 
 
 
-Use *mysqldump* command for database backup. It will generate a script to recreate the databse and reinsert the data back one by one.
-Use *mysql* command to restore database.
+Use **_mysqldump_** command for database backup. It will generate a script to recreate the databse and reinsert the data back one by one.
+Use **_mysql_** command to restore database.
 
 MySQL workbench or myphpadmin: GUI tool for manage and monitor MySQL database. It also allow you to import and export database
 
