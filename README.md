@@ -5,7 +5,9 @@
 SQL is a eclarative langauage 
 MySQL is relational database that describe data and the relationship between data entities
 
+
 A database is used for organize/manipulate data and for persistent data
+
 
 
 #### Normalization
@@ -33,7 +35,7 @@ SELECT 'hello', 'github'
 
 > SELECT * FROM <table_name>
 > Bad query because selecting everything from the table and increase disk I/O
-> Best practices is to be specific and define in the query. 
+> Best practices is to be explicit in the query. 
 
 ##### FROM Clause
 
@@ -189,4 +191,34 @@ FROM cars c, owner o;
 
 
 ##### SELF JOIN 
+
+##### UNION JOIN 
+
+
+### Backing up your database
+
+MySQL provides utilities, such as mysqldump, for database backup. They are good for small database backup. For medium to large databse, it is recommended to have physical backup. 
+
+
+Use *mysqldump* command for database backup. It will generate a script to recreate the databse and reinsert the data back one by one.
+Use *mysql* command to restore database.
+
+MySQL workbench or myphpadmin: GUI tool for manage and monitor MySQL database. It also allow you to import and export database
+
+
+##### Indexing
+
+##### View
+
+##### Scaler function 
+
+##### Stored Procedure
+
+
+##### Stored function
+
+##### Trigger
+
+##### Event
+
 
