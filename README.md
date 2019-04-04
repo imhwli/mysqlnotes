@@ -2,14 +2,13 @@
 # MySQL Notes
 
 
+SQL 
+1. Declarative langauage 
+2. Organize/Manipulate data
+3. Persistent data
 
-#### SQL's purpose 
-Declarative langauage 
-1.Organize data
-2.Persisten data
-3.Manipulate data
 
-Relational Database describe data and the relationship between data entities
+> Relational Database describe data and the relationship between data entities
 
 
 #### Normalization
