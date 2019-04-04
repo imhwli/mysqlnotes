@@ -1,7 +1,8 @@
 MySQL Notes
 ===========
 
-####SQL's purpose 
+SQL's purpose 
+-------------
 1.Organize data
 2.Persisten data
 3.Manipulate data
@@ -12,23 +13,27 @@ Way to describe data and the relationship between data entities
 
 
 
-####Normalization
+Normalization
+-------------
 
 
 
 
-####SELECT Clause
+SELECT Clause
+-------------
 Retrieve row/s from table 
 
 ~~~~
 SELECT type, maker FROM cars;
 ~~~~
 
-####FROM Clause
+FROM Clause
+-----------
 Specifying the table 
 
 
-####INSERT Clause
+INSERT Clause
+-------------
 Add row/s into tables
 
 ~~~~
@@ -36,14 +41,16 @@ INSERT INTO cars (maker, color)
 VALUE('Tesla', 'black');
 ~~~~
 
-####UPDATE Clause
+UPDATE Clause
+-------------
 Modify row/s in table
 
 ~~~~
 UPDATE cars SET maker = 'Honda' WHERE id = 1;
 ~~~~
 
-####DELETE Clause
+DELETE Clause
+-------------
 Remove row/s from table
 
 ~~~~
