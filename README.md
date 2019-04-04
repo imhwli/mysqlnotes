@@ -11,8 +11,33 @@ MySQL is relational database that describe data and the relationship between dat
 A database is used for organize/manipulate data and for persistent data.
 
 
+### Database Design 
 
-#### Normalization
+Database organizes data into rows and column. Each row is also call a record. 
+
+The goal of database design is eliminate data redundancy and ensure data integrity and accuracy
+
+
+Database is made of many independent tables with different purpose. In relational database design, the most important thing is to identify the relationship between tables. 
+
+1. one-to-one
+2. one-to-many
+3. many-to-many
+
+
+Primary key: unique identifier of the row of record in the table
+
+Foreign key: value in the table that reference to another record in another table. 
+
+> There will be time you need to
+>  - creating more column, 
+>  - split large table into smaller one, 
+>  - creating new table for option data, 1to1 relationship type. 
+>  - etc
+> 
+> Normalization use primary and foriegn key to create build relationship between tables 
+> i.e. first normal form, second normal form, third normal form, hight normal form
+
 
 
 ### Basic Query
