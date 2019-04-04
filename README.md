@@ -2,11 +2,13 @@
 # MySQL Notes
 
 
-SQL is a declarative langauage 
-MySQL is relational database that describe data and the relationship between data entities
+SQL is a declarative langauage.
 
 
-A database is used for organize/manipulate data and for persistent data
+MySQL is relational database that describe data and the relationship between data entities.
+
+
+A database is used for organize/manipulate data and for persistent data.
 
 
 
