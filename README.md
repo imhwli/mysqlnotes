@@ -53,7 +53,7 @@ SELECT <column name>, <colume name> FROM <table name>;
 SELECT type, maker FROM cars;
 ~~~~
 
-Will return a two columns
+Will return two columns
 ~~~~
 SELECT 'hello', 'github'
 ~~~~
