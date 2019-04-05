@@ -5,7 +5,7 @@
 SQL is a declarative langauage.
 
 
-MySQL is relational database that describe data and the relationship between data entities.
+MySQL is relational database that describes data and the relationship between data entities.
 
 
 A database is used for organize/manipulate data and for persistent data.
@@ -15,10 +15,10 @@ A database is used for organize/manipulate data and for persistent data.
 
 Database organizes data into rows and column. Each row is also call a record. 
 
-The goal of database design is eliminate data redundancy and ensure data integrity and accuracy
+The goal of database design is to eliminate data redundancy and ensure data integrity and accuracy
 
 
-Database is made of many independent tables with different purpose. In relational database design, the most important thing is to identify the relationship between tables. 
+Database is made of many independent tables with different purposes. In relational database design, the most important thing is to identify the relationship between the tables. 
 
 1. one-to-one
 2. one-to-many
@@ -33,9 +33,8 @@ Foreign key: value in the table that reference to another record in another tabl
 >  - creating more column, 
 >  - split large table into smaller one, 
 >  - creating new table for option data, 1to1 relationship type. 
->  - etc
 > 
-> Normalization use primary and foriegn key to create build relationship between tables 
+> Normalization uses primary and foriegn key to create relationship between tables.  
 > i.e. first normal form, second normal form, third normal form, hight normal form
 
 
@@ -47,11 +46,11 @@ Foreign key: value in the table that reference to another record in another tabl
 Retrieve row/s from table 
 
 ~~~~
-SELECT type, maker FROM cars;
+SELECT <column name>, <colume name> FROM <table name>;
 ~~~~
 
 ~~~~
-SELECT <column name>, <colume name> FROM <table name>;
+SELECT type, maker FROM cars;
 ~~~~
 
 Will return a two columns
@@ -61,7 +60,7 @@ SELECT 'hello', 'github'
 
 
 > SELECT * FROM <table_name>
-> Bad query because selecting everything from the table and increase disk I/O
+> This is an example of bad query because it selects everything from the table, which increase disk I/O
 > Best practices is to be explicit in the query. 
 
 ##### FROM Clause
@@ -227,8 +226,10 @@ FROM cars c, owner o;
 MySQL provides utilities, such as mysqldump, for database backup. They are good for small database backup. For medium to large databse, it is recommended to have physical backup. 
 
 
-Use **_mysqldump_** command for database backup. It will generate a script to recreate the databse and reinsert the data back one by one.
+Use [**_mysqldump_**](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) command for database backup. It will generate a script to recreate the databse and reinsert the data back one by one. 
 Use **_mysql_** command to restore database.
+
+
 
 MySQL workbench or myphpadmin: GUI tool for manage and monitor MySQL database. It also allow you to import and export database
 
