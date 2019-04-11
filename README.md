@@ -41,6 +41,23 @@ Foreign key: value in the table that reference to another record in another tabl
 
 ### Basic Query
 
+##### CREATE Clause
+
+Creating tables
+
+~~~~
+CREATE TABLE [IF NOT EXIST] my_table_name(
+	colume1 unsigned AUTO_INCREMENT PRIMARY KEY,
+	colume2 VARCHAR(30),
+	colume2 VARCHAR(50) NOT NULL
+	.....
+)
+
+~~~~
+
+
+
+
 ##### SELECT Clause
 
 Retrieve row/s from table 
