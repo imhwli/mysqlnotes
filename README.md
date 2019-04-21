@@ -41,21 +41,31 @@ Foreign key: value in the table that reference to another record in another tabl
 
 ### Basic Query
 
+##### Creat User 
+Creating new user and grant full permission
+
+~~~~
+CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
+
+GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
+FLUSH PRIVILEGES;
+~~~~
+
+
 ##### CREATE Clause
 
-Creating tables
+Creating new table
 
 ~~~~
 CREATE TABLE [IF NOT EXIST] my_table_name(
 	colume1 unsigned AUTO_INCREMENT PRIMARY KEY,
-	colume2 VARCHAR(30),
-	colume2 VARCHAR(50) NOT NULL
+	colune2 INT 
+	colume3 VARCHAR(30),
+	colume4 VARCHAR(50) NOT NULL
 	.....
 )
 
 ~~~~
-
-
 
 
 ##### SELECT Clause
@@ -246,6 +256,12 @@ MySQL provides utilities, such as mysqldump, for database backup. They are good 
 Use [**_mysqldump_**](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) command for database backup. It will generate a script to recreate the databse and reinsert the data back one by one. 
 Use **_mysql_** command to restore database.
 
+
+~~~
+mysqldump -h <hostname> -u <username> -p
+or 
+mysqldump --host=$SERVERNAME --user=$USERNAME --password=$PASSWORD
+~~~
 
 
 MySQL workbench or myphpadmin: GUI tool for manage and monitor MySQL database. It also allow you to import and export database
